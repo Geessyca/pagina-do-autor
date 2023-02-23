@@ -147,7 +147,6 @@ main {
 
 @media screen and (max-width:700px) {
     .author_header-actions {
-
         position: absolute;
         top: 5px;
         display: flex;
@@ -435,7 +434,7 @@ main {
     width: 30px;
     height: 30px;
     margin-right: 10px;
-    margin-top: 10px;
+    object-fit: contain;
 }
 
 .author_infos-total div div {
