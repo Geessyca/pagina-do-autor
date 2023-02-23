@@ -119,6 +119,12 @@ main {
     margin-right: 10px;
 }
 
+.author_header-connection p::after {
+    content: attr(data-content);
+    margin-left: 5px;
+
+}
+
 .author_header-connection a svg {
     width: 30px;
     margin-left: 5px;
@@ -182,7 +188,7 @@ main {
     align-items: center;
     justify-content: flex-start;
     width: 255px;
-    padding: 10px;
+    padding: 10px 20px;
 }
 
 .author_infos-picture {
@@ -197,6 +203,7 @@ main {
     font-size: 20px;
     line-height: 28px;
     color: #A6328A;
+    margin: 20px 0 30px;
 }
 
 .author_infos-message {
@@ -216,9 +223,10 @@ main {
     background-image: url(./img/“.svg);
     background-position: center;
     background-repeat: no-repeat;
-    padding: 10px 9px;
-    margin-top: -20px;
+    padding: 9px 9px;
+    margin-top: -15px;
     position: absolute;
+    background-size: contain;
 }
 
 .author_infos-message-container::after {
@@ -226,7 +234,7 @@ main {
     background-image: url(./img/”.svg);
     background-position: center;
     background-repeat: no-repeat;
-    padding: 10px 9px;
+    padding: 9px 9px;
     position: absolute;
     margin-left: 232px;
 }
@@ -236,7 +244,7 @@ main {
     font-size: 16px;
     line-height: 28px;
     color: #A6328A;
-    margin-top: 20px;
+    margin-top: 35px;
     margin-bottom: 0;
 }
 
@@ -360,6 +368,7 @@ main {
     font-size: 25px;
     line-height: 28px;
     color: #A6328A;
+    margin-bottom: 20px;
 }
 
 .author_infos-text {
@@ -370,8 +379,15 @@ main {
 }
 
 .author_infos-pontual {
+    padding-top: 25px;
     display: flex;
     flex-direction: column;
+}
+
+.author_infos-pontual-create::before {
+    content: attr(data-content);
+    margin-right: 5px;
+
 }
 
 .author_infos-pontual div {
@@ -417,6 +433,7 @@ main {
 
 .author_infos-total div img {
     width: 30px;
+    height: 30px;
     margin-right: 10px;
     margin-top: 10px;
 }
@@ -463,6 +480,7 @@ main {
 
     .author_infos-total div img {
         width: 20px;
+        height: 20px;
         margin-right: 5px;
     }
 
@@ -494,6 +512,16 @@ main {
     display: flex;
     align-items: center;
     color: #A6328A;
+    margin: 20px 0;
+}
+
+.author_infos-connections-title.connection {
+    margin-top: 0px;
+}
+
+.author_infos-connections-title.connection::after {
+    content: attr(data-content);
+    margin-left: 5px;
 }
 
 .author_infos-people {
