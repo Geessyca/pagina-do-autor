@@ -147,21 +147,29 @@
                             <img src=""/>
                             <h3>Titulo</h3>
                             <p>Nome do Autor</p>
-                            <span>EBOOK</span>
-                            <h3>R$20,00</h3>
+                            <div>
+                                <div>
+                                    <span>IMPRESSO</span>
+                                    <h3>R$25,00</h3>
+                                </div>
+                                <div>
+                                    <span>EBOOK</span>
+                                    <h3>R$20,00</h3>
+                                </div>
+                            </div>
                         </a>
                     -->
 
                 </div>
             </div>
-            <div class="author_books-container author_wanttobe">
+            <!--<div class="author_books-container author_wanttobe">
                 <h2>Também quer ser um Autor?</h2>
                 <div>
                     <img src="./img/world.svg" />
                     <h3>Acesse o blog e veja como otimizar suas vendas pelo mundo.</h3>
                 </div>
                 <a href="#">Começar a Vender</a>
-            </div>
+            </div>-->
         </section>
         <section class="author_evaluation">
             <div class="author_evaluation-container">
@@ -582,8 +590,16 @@ inicio-->
                 <img src="./img/dinamicas/${book}"/>
                 <h3>Titulo</h3>
                 <p>Nome do Autor</p>
-                <span>EBOOK</span>
-                <h3>R$20,00</h3>
+                <section>
+                    <div>
+                        <span>IMPRESSO</span>
+                        <h3>R$25,00</h3>
+                    </div>
+                    <div>
+                        <span>EBOOK</span>
+                        <h3>R$20,00</h3>
+                    </div>
+                </section>
             </a>
             `)
 
@@ -673,7 +689,7 @@ inicio-->
 <!--Script cruciais inicio-->
 <script>
     /*slide publish-items*/
-    slides = window.innerWidth < 701 ? 2 : window.innerWidth > 2000 ? 6 : 4
+    slides = window.innerWidth < 701 ? 2 : window.innerWidth < 1200 ? 3 : window.innerWidth > 2000 ? 6 : 4
     $('.author_books-publish-items').slick({
         dots: false,
         infinite: false,
