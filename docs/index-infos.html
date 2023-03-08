@@ -406,6 +406,29 @@
             </div>
         </div>
     </footer>
+    <section style="
+    width: 100%;
+    height: auto;
+    background: #00000069;
+    position: fixed;
+    bottom: 0;
+    padding: 10px;
+    color: white;
+    z-index: 999;
+">
+        Remover
+        <div>
+            <button style="cursor: pointer;" onclick="remove('author_connection')">Conexões do Autor</button>
+            <button style="cursor: pointer;" onclick="remove('author_interest')">Gêneros de Interesse</button>
+            <button style="cursor: pointer;" onclick="remove('author_badges')">Selos de Reconhecimento</button>
+            <button style="cursor: pointer;" onclick="remove('publish_items')">Livros publicados </button>
+            <button style="cursor: pointer;" onclick="remove('evaluation_items')">Resenhas e avaliações</button>
+            <button style="cursor: pointer;" onclick="remove('notice_items')">Notícias sobre o autor e obras</button>
+            <button style="cursor: pointer;" onclick="remove('store_items')">Loja do Autor</button>
+            <button style="cursor: pointer;" onclick="remove('instagram_items')">Perfil do Instagram</button>
+        </div>
+
+    </section>
 </body>
 <!--Script cruciais inicio-->
 <script>
@@ -791,5 +814,40 @@ inicio-->
     noInfos()
 </script>
 <!--Script cruciais fim-->
+<script>
+    function remove(tipo) {
+        if (tipo == "author_connection") {
+            document.querySelectorAll(".author_infos-connections-title")[0].style.display = document.querySelectorAll(".author_infos-connections-title")[0].style.display == "none" ? "" : "none"
+            document.getElementById("author_connection").style.display = document.getElementById("author_connection").style.display == "none" ? "" : "none"
+        }
+        if (tipo == "author_interest") {
+            document.querySelectorAll(".author_infos-connections-title")[1].style.display = document.querySelectorAll(".author_infos-connections-title")[1].style.display == "none" ? "" : "none"
+            document.getElementById("author_interest").style.display = document.getElementById("author_interest").style.display == "none" ? "" : "none"
+        }
+        if (tipo == "author_badges") {
+            document.querySelector(".author_infos-badges-title").style.display = document.querySelector(".author_infos-badges-title").style.display == "none" ? "" : "none"
+            document.getElementById("author_badges").style.display = document.getElementById("author_badges").style.display == "none" ? "" : "none"
+        }
+        if (tipo == "publish_items") {
+            document.querySelector(".author_books").style.display = document.querySelector(".author_books").style.display == "none" ? "" : "none"
+        }
+        if (tipo == "evaluation_items") {
+            document.querySelector(".author_evaluation").style.display = document.querySelector(".author_evaluation").style.display == "none" ? "" : "none"
+            document.querySelector(".author_contact").style.marginTop = document.querySelector(".author_evaluation").style.display == "none" ? "30px" : ""
+        }
+        if (tipo == "notice_items") {
+            document.querySelector(".author_contact-container").style.display = document.querySelector(".author_contact-container").style.display == "none" ? "" : "none"
+            document.querySelector(".author_contact-container-contact-mobile").style.margin = document.querySelector(".author_contact-container").style.display == "none" ? "auto" : ""
+        }
+        if (tipo == "store_items") {
+            document.querySelector(".author_store-container").style.display = document.querySelector(".author_store-container").style.display == "none" ? "" : "none"
+
+        }
+        if (tipo == "instagram_items") {
+            document.querySelector(".author_instagram").style.display = document.querySelector(".author_instagram").style.display == "none" ? "" : "none"
+
+        }
+    }
+</script>
 
 </html>
