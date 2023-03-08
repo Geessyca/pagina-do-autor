@@ -22,9 +22,6 @@
 
 
 </head>
-<style>
-
-</style>
 
 <body>
     <header>
@@ -145,18 +142,21 @@
                     <!--  Estrutura dos livros publicados
                         <a href="#" class="author_books-publish-item">
                             <img src=""/>
-                            <h3>Titulo</h3>
-                            <p>Nome do Autor</p>
                             <div>
-                                <div>
-                                    <span>IMPRESSO</span>
-                                    <h3>R$25,00</h3>
-                                </div>
-                                <div>
-                                    <span>EBOOK</span>
-                                    <h3>R$20,00</h3>
-                                </div>
+                                <h3>Titulo</h3>
+                                <p>Nome do Autor</p>
+                                <section>
+                                    <div>
+                                        <span>IMPRESSO</span>
+                                        <h3>R$25,00</h3>
+                                    </div>
+                                    <div>
+                                        <span>EBOOK</span>
+                                        <h3>R$20,00</h3>
+                                    </div>
+                                </section>
                             </div>
+                            
                         </a>
                     -->
 
@@ -519,6 +519,20 @@
     }
 
 </script>
+<script>
+    /*Script de abreviação do mês*/
+    function abbreviateMonth(date) {
+        if (window.innerWidth < 701) {
+            dateSplit = date.split(" ")
+            month = dateSplit[2]
+            dateSplit[2] = month.substring(0, 3)
+            return dateSplit.join(" ")
+        }
+        else {
+            return date
+        }
+    }
+</script>
 <!--Script cruciais fim-->
 <!--Script informações dinamicas :
     Fotos das conexões
@@ -588,18 +602,21 @@ inicio-->
         document.getElementById("publish-items").insertAdjacentHTML("afterbegin", `
             <a href="#" class="author_books-publish-item">
                 <img src="./img/dinamicas/${book}"/>
-                <h3>Titulo</h3>
-                <p>Nome do Autor</p>
-                <section>
-                    <div>
-                        <span>IMPRESSO</span>
-                        <h3>R$25,00</h3>
-                    </div>
-                    <div>
-                        <span>EBOOK</span>
-                        <h3>R$20,00</h3>
-                    </div>
-                </section>
+                <div>
+                    <h3>Titulo</h3>
+                    <p>Nome do Autor</p>
+                    <section>
+                        <div>
+                            <span>IMPRESSO</span>
+                            <h3>R$25,00</h3>
+                        </div>
+                        <div>
+                            <span>EBOOK</span>
+                            <h3>R$20,00</h3>
+                        </div>
+                    </section>    
+                </div>
+                
             </a>
             `)
 
@@ -646,6 +663,7 @@ inicio-->
         `)
     })
 </script>
+
 <script>
     /*Script de adição das noticias*/
     notices = [{ "titulo": "Título da Notícias do Autor", "data": "13 de Janeiro de 2023" }, { "titulo": "Título da Notícias do Autor", "data": "13 de Janeiro de 2023" }, { "titulo": "Título da Notícias do Autor", "data": "13 de Janeiro de 2023" }, { "titulo": "Título da Notícias do Autor", "data": "13 de Janeiro de 2023" }, { "titulo": "Título da Notícias do Autor", "data": "13 de Janeiro de 2023" }, { "titulo": "Título da Notícias do Autor", "data": "13 de Janeiro de 2023" }]
@@ -654,7 +672,7 @@ inicio-->
                 <div class="author_contact-notice-item">
                     <img src=""/>
                     <h3>${notice.titulo}</h3>
-                    <p>${notice.data}</p>
+                    <p>${abbreviateMonth(notice.data)}</p>
                     <a href="#">Ler mais</a>
                 </div>
             `)
@@ -689,7 +707,7 @@ inicio-->
 <!--Script cruciais inicio-->
 <script>
     /*slide publish-items*/
-    slides = window.innerWidth < 701 ? 2 : window.innerWidth < 1200 ? 3 : window.innerWidth > 2000 ? 6 : 4
+    slides = window.innerWidth < 701 ? 1 : window.innerWidth < 1200 ? 3 : window.innerWidth > 2000 ? 6 : 4
     $('.author_books-publish-items').slick({
         dots: false,
         infinite: false,

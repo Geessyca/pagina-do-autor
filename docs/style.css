@@ -223,7 +223,6 @@ main {
     background-position: center;
     background-repeat: no-repeat;
     padding: 9px 9px;
-    margin-top: -15px;
     position: absolute;
     background-size: contain;
 }
@@ -236,6 +235,7 @@ main {
     padding: 9px 9px;
     position: absolute;
     margin-left: 232px;
+    margin-top: -20px;
 }
 
 .author_infos-badges-title {
@@ -469,6 +469,10 @@ main {
         font-size: 18px;
     }
 
+    .author_infos-pontual {
+        padding-top: 15px;
+    }
+
     .author_infos-text,
     .author_infos-pontual div h2,
     .author_infos-total div div {
@@ -481,6 +485,7 @@ main {
         width: 20px;
         height: 20px;
         margin-right: 5px;
+        margin-top: 5px;
     }
 
     #author_view,
@@ -580,6 +585,7 @@ main {
     .author_infos-connections-title {
         font-size: 14px;
         width: max-content;
+        margin-top: 0px;
     }
 
     .author_infos-people {
@@ -620,7 +626,7 @@ main {
 }
 
 .author_books-publish-item {
-    display: flex;
+    display: flex !important;
     align-items: flex-start;
     flex-direction: column;
     text-decoration: none;
@@ -628,6 +634,13 @@ main {
 
 .author_books-publish-item img {
     width: 137px;
+}
+
+.author_books-publish-item div {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+
 }
 
 .author_books-publish-item section {
@@ -639,7 +652,7 @@ main {
 
 .author_books-publish-item h3 {
     font-weight: 600;
-    font-size: 20px;
+    font-size: 18px;
     margin: 2px 0;
     color: #4E5D78;
 }
@@ -753,6 +766,10 @@ main {
 
     .author_books-publish-title {
         font-size: 18px;
+    }
+
+    .author_books-publish-item {
+        align-items: center;
     }
 
     .author_books-publish-item img {
