@@ -247,9 +247,11 @@ main {
     margin-top: 35px;
     margin-bottom: 0;
 }
+
 .author_infos-badges-title::first-letter {
     text-transform: uppercase !important;
 }
+
 .author_infos-badges {
     display: flex;
     justify-content: center;
@@ -372,9 +374,11 @@ main {
     color: #A6328A;
     margin-bottom: 20px;
 }
+
 .author_infos-title::first-letter {
     text-transform: uppercase !important;
 }
+
 .author_infos-text {
     font-weight: 400;
     font-size: 14px;
@@ -523,17 +527,16 @@ main {
     color: #A6328A;
     margin: 20px 0;
 }
+
 .author_infos-connections-title::first-letter {
     text-transform: uppercase !important;
 }
+
 .author_infos-connections-title.connection {
     margin-top: 0px;
 }
 
-.author_infos-connections-title.connection::after {
-    content: attr(data-content);
-    margin-left: 5px;
-}
+
 
 .author_infos-people {
     display: flex;
@@ -631,9 +634,11 @@ main {
     color: #724786;
     margin-left: 4%;
 }
+
 .author_books-publish-title::first-letter {
     text-transform: uppercase !important;
 }
+
 .author_books-publish-item {
     display: flex !important;
     align-items: flex-start;
@@ -846,9 +851,11 @@ main {
     color: #724786;
     margin-left: 4%;
 }
+
 .author_evaluation-title::first-letter {
     text-transform: uppercase !important;
 }
+
 .author_books-evaluation-item {
     display: flex;
 }
@@ -1067,9 +1074,11 @@ div#author_books-star-rating {
     color: #A6328A;
     margin-left: 4%;
 }
+
 .author_contact-title::first-letter {
     text-transform: uppercase !important;
 }
+
 .author_contact-container-contact .author_contact-title {
     justify-content: center;
     margin-left: 0;
@@ -1269,9 +1278,11 @@ div#author_books-star-rating {
     color: #A6328A;
     margin-left: 4%;
 }
+
 .author_store-title::first-letter {
     text-transform: uppercase !important;
 }
+
 .author_store-item {
     text-decoration: none;
     margin-bottom: 20px;
@@ -1368,9 +1379,11 @@ div#author_books-star-rating {
     margin-left: 4%;
     padding-left: 15px;
 }
+
 .author_instagram-title::first-letter {
     text-transform: uppercase !important;
 }
+
 .author_instagram-items {
     display: flex;
     align-items: center;
@@ -1449,9 +1462,11 @@ div#author_books-star-rating {
     align-items: center;
     color: #A6328A;
 }
+
 .author_network-title::first-letter {
     text-transform: uppercase !important;
 }
+
 .author_network-items a img {
     margin: 10px;
     width: 40px;

@@ -72,7 +72,7 @@
                 </div>
             </div>
             <div class="author_infos-whoami">
-                <h2 class="author_infos-title">Quem sou eu</h2>
+                <h2 class="author_infos-title">Bio</h2>
                 <p class="author_infos-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                     Lorem Ipsum has been the industry's standard
                     dummy text ever since the 1500s. Lorem Ipsum is simply dum my text of the printing and typesetting
@@ -113,9 +113,9 @@
             </div>
             <div class="author_infos-connections">
                 <div>
-                    <h2 class="author_infos-connections-title connection" data-content="Autor">Conexões do </h2>
+                    <h2 class="author_infos-connections-title connection">Minhas Conexões </h2>
                     <div id="author_connection" class="author_infos-people">
-                        <!-- Estrutura das onexões do autor
+                        <!-- Estrutura das Minhas Conexões
                                             <a href="#">
                                                 <img src=""/>
                                             </a>
@@ -137,9 +137,9 @@
         </section>
         <section class="author_books">
             <div class="author_books-container">
-                <h2 class="author_books-publish-title">Livros publicados</h2>
+                <h2 class="author_books-publish-title">Meus livros</h2>
                 <div id="publish-items" class="author_books-publish-items">
-                    <!--  Estrutura dos livros publicados
+                    <!--  Estrutura dos Meus livros
                         <a href="#" class="author_books-publish-item">
                             <img src=""/>
                             <div>
@@ -212,9 +212,9 @@
         </section>
         <section class="author_contact">
             <div class="author_contact-container">
-                <h2 class="author_contact-title">Notícias sobre o autor e obras</h2>
+                <h2 class="author_contact-title">Meus posts</h2>
                 <div id="notice-items" class="author_contact-notice-items">
-                    <!--  Estrutura das noticias
+                    <!--  Estrutura das Meus posts
                         <div class="author_contact-notice-item">
                             <img src=""/>
                             <h3>Titulo</h3>
@@ -227,7 +227,7 @@
             </div>
             <div class="author_contact-container-contact-mobile">
                 <div class="author_contact-container-contact">
-                    <h2 class="author_contact-title">Falar com o autor</h2>
+                    <h2 class="author_contact-title">Fale comigo</h2>
                     <form action="" accept-charset="UTF-8" method="post">
                         <input type="text" name="contact[name]" id="contact_name" value="" placeholder="Nome">
                         <input type="text" name="contact[email]" id="contact_email" value="" placeholder="E-mail">
@@ -239,33 +239,6 @@
             </div>
 
         </section>
-        <section class="author_store">
-            <div class="author_store-container">
-                <h2 class="author_store-title">Loja do Autor</h2>
-                <div id="store-items" class="author_store-items">
-                    <!--  Estrutura da loja
-                        <a href="#" class="author_store-item">
-                            <img src=""/>
-                            <h3>Titulo</h3>
-                            <span>Preço</span>
-                            <p>Valor</p>
-                        </a>
-                    -->
-
-                </div>
-            </div>
-        </section>
-        <section class="author_instagram">
-            <h2 class="author_instagram-title">Perfil do Instagram</h2>
-            <div id="instagram-items" class="author_instagram-items">
-                <!--  Estrutura da loja
-                        <a href="#">
-                            <img src=""/>
-                        </a>
-                    -->
-
-            </div>
-        </section>
         <section class="author_network">
             <h2 class="author_network-title">Veja minhas redes sociais</h2>
             <div id="network-items" class="author_network-items">
@@ -276,8 +249,15 @@
                     <img src="./img/facebook.svg" />
                 </a>
                 <a href="#">
+                    <img src="./img/insatgram.svg" />
+                </a>
+                <a href="#">
+                    <img src="./img/linkedin.svg" />
+                </a>
+                <a href="#">
                     <img src="./img/youtube.svg" />
                 </a>
+
             </div>
         </section>
     </main>
@@ -537,9 +517,9 @@
 <!--Script informações dinamicas :
     Fotos das conexões
     Os gêneros de interesse
-    Livros publicados
+    Meus livros
     Resenhas e avaliações
-    Notícias sobre o autor e obras
+    Meus posts
     Loja do Autor
     Perfil do Instagram
 inicio-->
@@ -559,7 +539,7 @@ inicio-->
     })
 </script>
 <script>
-    /*Script de adição dos Conexões do Autor*/
+    /*Script de adição dos Minhas Conexões*/
     connections = [
         {
             "people": "Ellipse 15.png"
@@ -597,7 +577,7 @@ inicio-->
     })
 </script>
 <script>
-    /*Script de adição dos Livros publicados*/
+    /*Script de adição dos Meus livros*/
     books = ["Rectangle 62.png", "Rectangle 60.png", "Rectangle 58.png", "Rectangle 56.png", "Rectangle 62.png", "Rectangle 60.png", "Rectangle 58.png", "Rectangle 56.png"]
     books.map(function (book) {
         document.getElementById("publish-items").insertAdjacentHTML("afterbegin", `
@@ -666,8 +646,8 @@ inicio-->
 </script>
 
 <script>
-    /*Script de adição das noticias*/
-    notices = [{ "titulo": "Título da Notícias do Autor", "data": "13 de Janeiro de 2023" }, { "titulo": "Título da Notícias do Autor", "data": "13 de Janeiro de 2023" }, { "titulo": "Título da Notícias do Autor", "data": "13 de Janeiro de 2023" }, { "titulo": "Título da Notícias do Autor", "data": "13 de Janeiro de 2023" }, { "titulo": "Título da Notícias do Autor", "data": "13 de Janeiro de 2023" }, { "titulo": "Título da Notícias do Autor", "data": "13 de Janeiro de 2023" }]
+    /*Script de adição das Meus posts*/
+    notices = [{ "titulo": "Título da Post do Autor", "data": "13 de Janeiro de 2023" }, { "titulo": "Título da Post do Autor", "data": "13 de Janeiro de 2023" }, { "titulo": "Título da Post do Autor", "data": "13 de Janeiro de 2023" }, { "titulo": "Título da Post do Autor", "data": "13 de Janeiro de 2023" }, { "titulo": "Título da Post do Autor", "data": "13 de Janeiro de 2023" }, { "titulo": "Título da Post do Autor", "data": "13 de Janeiro de 2023" }]
     notices.map(function (notice) {
         document.getElementById("notice-items").insertAdjacentHTML("afterbegin", `
                 <div class="author_contact-notice-item">
@@ -679,42 +659,39 @@ inicio-->
             `)
     })
 </script>
-<script>
-    /*Script de adição dos livros*/
-    stores = [{ "titulo": "Titulo", "valor": "R$20,00" }, { "titulo": "Titulo", "valor": "R$20,00" }, { "titulo": "Titulo", "valor": "R$20,00" }, { "titulo": "Titulo", "valor": "R$20,00" }, { "titulo": "Titulo", "valor": "R$20,00" }, { "titulo": "Titulo", "valor": "R$20,00" }, { "titulo": "Titulo", "valor": "R$20,00" }, { "titulo": "Titulo", "valor": "R$20,00" }, { "titulo": "Titulo", "valor": "R$20,00" }, { "titulo": "Titulo", "valor": "R$20,00" }, { "titulo": "Titulo", "valor": "R$20,00" }, { "titulo": "Titulo", "valor": "R$20,00" }]
-    stores.map(function (store) {
-        document.getElementById("store-items").insertAdjacentHTML("afterbegin", `
-                <a href="#" class="author_store-item">
-                    <img src=""/>
-                    <h3>${store.titulo}</h3>
-                    <span>Preço</span>
-                    <p>${store.valor}</p>
-                </a>
-            `)
-    })
-</script>
-<script>
-    /*Script de adição de fotos do instagram*/
-    for (var i = 0; i < 5; i++) {
-        document.getElementById("instagram-items").insertAdjacentHTML("afterbegin", `
-                <a href="#">
-                    <img src=""/>
-                </a>
-            `)
-    }
-
-</script>
 
 <!--Script informações dinamica-->
 <!--Script cruciais inicio-->
 <script>
     /*slide publish-items*/
-    slides = window.innerWidth < 701 ? 1 : window.innerWidth < 1200 ? 3 : window.innerWidth > 2000 ? 6 : 4
     $('.author_books-publish-items').slick({
         dots: false,
         infinite: false,
-        slidesToShow: slides,
-        slidesToScroll: slides
+        slidesToShow: 6,
+        slidesToScroll: 6,
+        responsive: [
+            {
+                breakpoint: 2000,
+                settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 4
+                }
+            },
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3
+                }
+            },
+            {
+                breakpoint: 701,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
     });
 
 
@@ -734,20 +711,27 @@ inicio-->
     $('.author_contact-notice-items').slick({
         dots: false,
         infinite: false,
-        slidesToShow: slides,
-        slidesToScroll: slides
+        slidesToShow: 5,
+        slidesToScroll: 5,
+        responsive: [
+            {
+                breakpoint: 2000,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3
+                }
+            },
+            {
+                breakpoint: 701,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            }
+        ]
     });
 </script>
-<script>
-    /*slide store-items*/
-    slides = window.innerWidth < 701 ? 2 : window.innerWidth < 1000 ? 4 : window.innerWidth > 2000 ? 8 : 5
-    $('.author_store-items').slick({
-        dots: false,
-        infinite: false,
-        slidesToShow: slides,
-        slidesToScroll: slides
-    });
-</script>
+
 <script>
     function noInfos() {
         author_connection = document.getElementById("author_connection").children.length
@@ -777,16 +761,7 @@ inicio-->
             document.querySelector(".author_contact-container-contact-mobile").style.margin = "auto"
 
         }
-        store_items = document.querySelector("#store-items .slick-list").children[0].children.length
-        if (store_items <= 0) {
-            document.querySelector(".author_store-container").style.display = "none"
 
-        }
-        instagram_items = document.querySelector("#instagram-items").children.length
-        if (instagram_items <= 0) {
-            document.querySelector(".author_instagram").style.display = "none"
-
-        }
     }
     noInfos()
 </script>
