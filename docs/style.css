@@ -1482,6 +1482,13 @@ div#author_books-star-rating {
         width: 30px;
     }
 
+    .author_network-items {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
 }
 
 
