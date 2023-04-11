@@ -84,12 +84,12 @@
                 <div class="author_infos-pontual">
                     <div>
                         <img src="./img/pin.svg" />
-                        <h2>Mora em <h2 id="author_city">São Paulo, Brasil</h2>
+                        <h2>Mora em <h2 id="author_city">Brasil</h2>
                         </h2>
                     </div>
                     <div>
                         <img src="./img/user.svg" />
-                        <h2 data-content="Autor" class="author_infos-pontual-create"> desde:<h2 id="author_create">
+                        <h2 data-content="Autor" class="author_infos-pontual-create"> do Clube desde:<h2 id="author_create">
                                 Março, 2020</h2>
                         </h2>
                     </div>
@@ -299,10 +299,8 @@
                     <div class="footer-column">
                         <div class="footer-column-title">Mídias Sociais</div>
                         <div class="footer-column-socials">
-                            <a href="https://twitter.com/ClubedeAutores" title="Twitter" class="twitter"
-                                rel="noopener"></a>
-                            <a href="https://facebook.com/cdautores" title="Facebook" class="facebook"
-                                rel="noopener"></a>
+                            <a href="https://twitter.com/ClubedeAutores" title="Twitter" class="twitter" rel="noopener"></a>
+                            <a href="https://facebook.com/cdautores" title="Facebook" class="facebook" rel="noopener"></a>
                         </div>
                     </div>
                     <div class="footer-column">
@@ -687,6 +685,13 @@ inicio-->
             {
                 breakpoint: 701,
                 settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            },
+            {
+                breakpoint: 501,
+                settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1
                 }
@@ -707,7 +712,6 @@ inicio-->
 </script>
 <script>
     /*slide notice-items*/
-    slides = window.innerWidth < 701 ? 2 : window.innerWidth > 2000 ? 5 : 3
     $('.author_contact-notice-items').slick({
         dots: false,
         infinite: false,
