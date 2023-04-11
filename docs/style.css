@@ -1182,7 +1182,7 @@ div#author_books-star-rating {
     display: flex;
 }
 
-@media screen and (max-width:1100px) and (min-width:800px) {
+@media screen and (max-width:1150px) and (min-width:800px) {
     .author_contact {
         width: 90%;
         display: flex;
